@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Quiz Type - Quizzers</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Quizzers</h1>
+  </header>
+
+  <main>
+    <h2>Choose Quiz Type</h2>
+    <form id="quiz-type-form" action="/student-quiz-type" method = "post">
+      <label for="quiz-type">Quiz Type</label>
+      <select id="quiz-type" name="quiz-type" required>
+        <option value="public">Public Quiz</option>
+        <option value="private">Private Quiz</option>
+      </select>
+
+      <button type="submit">Next</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2024 Quizzers. All rights reserved.</p>
+  </footer>
+</body>
+</html>

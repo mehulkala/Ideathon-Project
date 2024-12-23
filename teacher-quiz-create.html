@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Quiz - Quizzers</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="create-quiz.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Quizzers</h1>
+  </header>
+
+  <main>
+    <h2>Create New Quiz</h2>
+    <form id="create-quiz-form">
+      <label for="quiz-name">Quiz Name</label>
+      <input type="text" id="quiz-name" name="quiz-name" required>
+
+      <label for="quiz-type">Quiz Type</label>
+      <select id="quiz-type" name="quiz-type" required>
+        <option value="public">Public</option>
+        <option value="private">Private</option>
+      </select>
+
+      <label for="questions">Add Questions (JSON Format)</label>
+      <textarea id="questions" name="questions" placeholder='[{"question":"What is 2+2?", "type":"MCQ", "options":["3", "4", "5"], "answer":"4"}]' required></textarea>
+
+      <button type="submit">Create Quiz</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2024 Quizzers. All rights reserved.</p>
+  </footer>
+</body>
+</html>

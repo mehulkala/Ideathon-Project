@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Signup - Quizzers</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="signup.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Quizzers Teacher Signup</h1>
+  </header>
+
+  <main>
+    <div class="signup-container">
+      <h2>Sign up for Teacher Account</h2>
+
+      <form id="signup-form">
+        <label for="phone">Phone Number or Email:</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter your phone number or email" required>
+
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <!-- Send OTP Button -->
+        <button type="button" id="send-otp">Send OTP</button>
+
+        <!-- OTP Section (Initially hidden) -->
+        <div id="otp-section" style="display: none;">
+          <label for="otp">Enter OTP:</label>
+          <input type="text" id="otp" name="otp" placeholder="Enter OTP" required>
+          <button type="button" id="verify-otp">Verify OTP</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Quizzers</p>
+  </footer>
+
+</body>
+</html>
